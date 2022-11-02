@@ -1,13 +1,9 @@
 import React from 'react'
 
-const HomeCard = ({item:{id, cover, name, rating, time, desc, starring, genres, tags, video}}) => {
+const HomeCard = () => {
   return (
     <div>
-      <div className="box">
-        <div className="coverImage">
-          <img src={cover} alt="" />
-        </div>
-      </div>
+      HomeCard
     </div>
   )
 }
