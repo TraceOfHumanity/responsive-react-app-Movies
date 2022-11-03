@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
-import { homeData } from '../../dummyData';
-import Home from './Home';
+import React, { useState } from "react";
+// import "./home.css";
+import { homeData } from "../../dummyData";
+import Home from "./Home";
 
 const Homes = () => {
-  const [item, setItem] = useState(homeData);
+  const [items, setItems] = useState(homeData)
 
   return (
     <div>
       <section className='home'>
-        <Home item={item} />
+        <Home items={items} />
       </section>
       <div className="margin">
 
