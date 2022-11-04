@@ -11,7 +11,7 @@ const Header = () => {
         <div className="container flexSB">
           <nav className="flexSB">
             <div className="logo">
-              <h1>ExtraNET</h1>
+              <h1>MovieNet</h1>
             </div>
             <ul className={Mobile ? "navMenu-list" : "flexSB"} onClick={() => setMobile(false)}>
               <Link to='/'>Home</Link>

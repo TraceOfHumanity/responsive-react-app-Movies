@@ -147,6 +147,19 @@ h6 {
 .main {
   flex: 1 1 auto;
 }
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #D9D9D9;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ef0813;
+  border-radius: 10px;
+}
 /* ------------------------------------------------------------- */
 .container{
   margin: 0 auto;
@@ -166,4 +179,31 @@ button{
   padding: 12px 40px;
   font-size: 17px;
   color: #fff;
+}
+.flex{
+  display: flex;
+}
+.control-btn button{
+  background: none;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.control-btn .next{
+  position: absolute;
+  top: 50%;
+  right: 2%;
+}
+.control-btn .prev{
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  z-index: 101;
 }
