@@ -1,61 +1,59 @@
 import React from 'react';
 import { Link } from "react-router-dom"
+import "./home.css"
 
-const HomeCard = ({ item: { id, cover, name, rating, time, desc, starring, genres, tags, vieo } }) => {
+
+const HomeCard = ({ item: { id, cover, name, rating, time, desc, starring, genres, tags, video } }) => {
   return (
     <>
-      <div className="box">
-        <div className="coverImage">
-          <img src={cover} alt="" />
+      <div className='box'>
+        <div className='coverImage'>
+          <img src={cover} alt='' />
         </div>
-        <div className="content flex">
-          <div className="details row">
+        <div className='content flex'>
+          <div className='details row'>
             <h1>{name}</h1>
-            <div className="rating flex">
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star-half"></i>
+            <div className='rating flex'>
+              <div className='rate'>
+                <i className='fas fa-star'></i>
+                <i className='fa fa-star'></i>
+                <i className='fa fa-star'></i>
+                <i className='fa fa-star'></i>
+                <i className='fa fa-star-half'></i>
+              </div>
+              <label>{rating}(Imdb)</label>
+              <span>GP</span>
+              <label>{time}</label>
             </div>
-            <label>{rating}</label>
-            <span>GP</span>
-            <label>{time}</label>
-          </div>
-          <p>{desc}</p>
-          <div className="cost">
-            <h4>
-              <span>
-                Starring
+            <p>{desc}</p>
+            <div className='cost'>
+              <h4>
+                <span>Starring </span>
                 {starring}
-              </span>
-            </h4>
-            <h4>
-              <span>
-                Genres
+              </h4>
+              <h4>
+                <span>Genres </span>
                 {genres}
-              </span>
-            </h4>
-            <h4>
-              <span>
-                Tags
+              </h4>
+              <h4>
+                <span>Tags </span>
                 {tags}
-              </span>
-            </h4>
-            <button className='primary-btn'>
-              <i className="fas fa-play"></i>PLAY NOW
-            </button>
-            <div className="button row">
-              <Link to={`/singlepage/${id}`}>
-                <button>
-                  <div className="img">
-                    <img src="./images/play-button.png" alt="" />
-                    <img src="./images/play.png" alt="" />
-                  </div>
-                  WATCH TRAILER
-                </button>
-              </Link>
+              </h4>
             </div>
+            <button className='primary-btn'>
+              <i className='fas fa-play'></i> PLAY NOW
+            </button>
+          </div>
+          <div className='playButton row'>
+            <Link to={`/singlepage/${id}`}>
+              <button>
+                <div className='img'>
+                  <img src='./images/play-button.png' alt='' />
+                  <img src='./images/play.png' className='change' />
+                </div>
+                WATCH TRAILER
+              </button>
+            </Link>
           </div>
         </div>
       </div>
