@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import HomePages from './components/homes/HomePages';
+import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -8,15 +7,19 @@ import {
   Link
 } from "react-router-dom";
 import Header from './components/header/Header';
+import HomePages from './home/HomePages';
 
 function App() {
   return (
     <>
     <Router>
-      <Header/>
+      <div>
+        <Header />
         <Switch>
-          <Route exact path='/' component={HomePages}/>
+          <Route path="/" component={HomePages}>
+          </Route>
         </Switch>
+      </div>
     </Router>
     </>
   );
