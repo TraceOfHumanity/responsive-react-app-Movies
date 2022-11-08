@@ -62,23 +62,17 @@
   color: #e50813;
   margin-right: 5px;
 }
-.homeContainer .cost {
+.homeContainer .cast {
   margin: 30px 0;
 }
-/* .homeContainer .sliderTransition{
-  transform: 0s;
-  -webkit-transform: 0s;
-  -moz-transform: 0s;
-  -ms-transform: 0s;
-  -o-transform: 0s;
-} */
-.cost h4 {
+
+.cast h4 {
   font-weight: 500;
   margin-bottom: 10px;
   font-size: 17px;
   color: #fff;
 }
-.cost h4 span {
+.cast h4 span {
   color: #e50813;
   margin-right: 5px;
 }
