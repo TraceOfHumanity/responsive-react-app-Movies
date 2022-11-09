@@ -15,17 +15,15 @@ function App() {
   return (
     <>
       <Router>
-        <div>
-          <Header />
-          <Switch>
-            <Route path="/" component={HomePages} />
-            <Route path="/singlePage/:id" component={SinglePage} />
-          </Switch>
-          <Footer />
-        </div>
+        <Header />
+        <Switch>
+          <Route exact path='/' component={HomePages} />
+          <Route path='/singlepage/:id' component={SinglePage} exact />
+        </Switch>
+        <Footer />
       </Router>
     </>
-  );
+  )
 }
 
-export default App;
+export default App

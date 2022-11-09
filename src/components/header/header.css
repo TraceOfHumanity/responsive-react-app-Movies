@@ -1,73 +1,54 @@
 header {
   height: 10vh;
   line-height: 10vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
-  color: white;
-  position: relative;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 999;
 }
-header h1 {
-  font-size: 36px;
-  font-weight: 800;
-  display: inline-block;
-  background: linear-gradient(133deg, rgb(255, 124, 0), #00c3ce);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+.logo img {
+  width: 150px;
+  margin-top: 20px;
+  margin-right: 30px;
 }
+
 header a {
   color: #fff;
   margin-left: 30px;
 }
+
 header i {
-  position: relative;
-  quotes: 40px;
-  height: 40px;
   width: 40px;
+  height: 40px;
   padding: 10px;
   text-align: center;
-  margin: 0 10px;
-  border: 2px solid #fff;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  border: 2px solid #fff;
+  margin: 0 10px;
 }
-header i::before {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-}
+
 header button {
+  border-radius: 10px;
   font-size: 15px;
   font-weight: bold;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
 }
-header .toggle {
+
+.toggle {
   display: none;
 }
 
 @media only screen and (max-width: 768px) {
-  header .account {
-    display: none;
-  }
-  header ul li {
-    margin-top: 30px;
-    padding: 0 50px;
-  }
   header nav .flexSB {
     display: none;
   }
-  header nav .navMenu-list {
+  .account {
+    display: none;
+  }
+  .navMenu-list {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -76,14 +57,19 @@ header .toggle {
     background-color: #e50813;
     width: 50%;
     height: 100vh;
-    z-index: 999;
+    z-index: 9999;
   }
-  header nav .toggle {
+  header ul li {
+    align-items: left;
+    margin-top: 30px;
+    padding: 0 50px;
+  }
+  .toggle {
     display: block;
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 0px;
+    right: 20px;
     margin: auto;
     cursor: pointer;
     background: none;
