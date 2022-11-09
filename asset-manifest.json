@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/responsive-react-app-Movies/static/css/main.fbbe3196.css",
+    "main.js": "/responsive-react-app-Movies/static/js/main.36013ca8.js",
+    "static/js/787.369bfca2.chunk.js": "/responsive-react-app-Movies/static/js/787.369bfca2.chunk.js",
+    "static/media/texure.jpg": "/responsive-react-app-Movies/static/media/texure.5fd81b0ea718d21dec89.jpg",
+    "static/media/slick.svg": "/responsive-react-app-Movies/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/responsive-react-app-Movies/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/responsive-react-app-Movies/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/responsive-react-app-Movies/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/responsive-react-app-Movies/index.html",
+    "main.fbbe3196.css.map": "/responsive-react-app-Movies/static/css/main.fbbe3196.css.map",
+    "main.36013ca8.js.map": "/responsive-react-app-Movies/static/js/main.36013ca8.js.map",
+    "787.369bfca2.chunk.js.map": "/responsive-react-app-Movies/static/js/787.369bfca2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fbbe3196.css",
+    "static/js/main.36013ca8.js"
+  ]
+}
